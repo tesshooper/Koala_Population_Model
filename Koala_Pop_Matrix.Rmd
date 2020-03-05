@@ -18,9 +18,6 @@ library(primer)
 ```
 
 
-
-
-
 ### 1. Make a matrix for Koala population  
 ```{r, pop. matrix}
 
