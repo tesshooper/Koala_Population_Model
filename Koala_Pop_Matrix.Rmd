@@ -1,0 +1,37 @@
+---
+title: "Koala Population Matrix"
+author: "Tess Hooper"
+date: "3/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+### Load packages
+
+library(tidyverse)
+library(popbio)
+library(primer)
+
+```
+
+
+
+
+
+### 1. Make a matrix for Koala population  
+```{r, pop. matrix}
+
+class_names <- c("Newborns", "Juveniles", "Adult")
+A <- matrix(c(   0, 0, 0, 4.665, 61.896,
+               0.675, 0.703, 0, 0, 0,
+               0, 0.047, 0.657, 0, 0,
+               0, 0, 0.019, 0.682, 0,
+              0, 0, 0, 0.061, 0.809),
+nrow = 5, ncol = 5, byrow = TRUE, dimnames = list(class_names, class_names))
+
+```
+
+### 2. 
